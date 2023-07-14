@@ -1,23 +1,4 @@
 <?php
-/**
- * auth.php
- * Copyright (c) 2019 james@firefly-iii.org.
- *
- * This file is part of Firefly III (https://github.com/firefly-iii).
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
 
 declare(strict_types=1);
 
@@ -26,16 +7,6 @@ if ('ldap' === strtolower((string)env('AUTHENTICATION_GUARD'))) {
 }
 
 return [
-    /*
-    |--------------------------------------------------------------------------
-    | Authentication Defaults
-    |--------------------------------------------------------------------------
-    |
-    | This option controls the default authentication "guard" and password
-    | reset options for your application. You may change these defaults
-    | as required, but they're a perfect start for most applications.
-    |
-    */
 
     'defaults'     => [
         'guard'     => envNonEmpty('AUTHENTICATION_GUARD', 'web'),
@@ -43,24 +14,6 @@ return [
     ],
     'guard_header' => envNonEmpty('AUTHENTICATION_GUARD_HEADER', 'REMOTE_USER'),
     'guard_email'  => envNonEmpty('AUTHENTICATION_GUARD_EMAIL', null),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Authentication Guards
-    |--------------------------------------------------------------------------
-    |
-    | Next, you may define every authentication guard for your application.
-    | Of course, a great default configuration has been defined for you
-    | here which uses session storage and the Eloquent user provider.
-    |
-    | All authentication drivers have a user provider. This defines how the
-    | users are actually retrieved out of your database or other storage
-    | mechanisms used by this application to persist your user's data.
-    |
-    | Supported: "session", "token"
-    |
-    */
-
     'guards' => [
         'web'               => [
             'driver'   => 'session',
