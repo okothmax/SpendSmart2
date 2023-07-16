@@ -1,9 +1,8 @@
 {
   "name": "Firefly III",
-  "description": "A free and open source personal finances manager",
-  "repository": "https://github.com/firefly-iii/firefly-iii",
-  "website": "https://firefly-iii.org/",
-  "logo": "https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/public/mstile-150x150.png",
+  "description": "A personal finances manager",
+  "repository": "https://github.com/okothmax/SpendSmart2",
+  "website": "https://orain.tech/",
   "keywords": [
     "finance",
     "finances",
