@@ -1,25 +1,5 @@
 <?php
 
-/**
- * index.php
- * Copyright (c) 2020 james@firefly-iii.org
- *
- * This file is part of Firefly III (https://github.com/firefly-iii).
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
-
 declare(strict_types=1);
 
 echo '<!DOCTYPE HTML>
@@ -46,9 +26,6 @@ echo '<!DOCTYPE HTML>
 </p>
 <p>
     Leaving your web server configured like this is a <span style="color:red;">huge</span> security risk.
-</p>
-<p>
-Please <a href="https://docs.firefly-iii.org/firefly-iii/faq/self_hosted/#i-have-to-visit-firefly-iii-through-public-and-it-gives-me-a-warning">read more on the Github help pages</a>.
 </p>
 </body>
 </html>
